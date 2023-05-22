@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item>-->
+<!--        <bitmap -->
+<!--            android:dither="true" -->
+<!--            android:src="@color/blue" -->
+<!--            android:tileMode="repeat" />-->
+<!--    </item>-->
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:centerColor="@color/blue"
+                android:endColor="@color/white_green"
+                android:gradientRadius="100dp"
+                android:startColor="@color/white_green"
+                android:type="linear"
+                android:angle="@integer/material_motion_duration_long_2"/>
+        </shape>
+    </item>
+</layer-list>

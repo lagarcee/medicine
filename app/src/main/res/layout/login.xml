@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hello" />
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добро пожаловать!"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="25dp"
+        android:text="Войдите, чтобы пользоваться функциями приложения"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вход по E-mail"
+            android:textColor="@color/purple_dark"
+            android:textSize="14dp" />
+
+        <EditText
+            android:hint="example@mail.ru"
+            android:textColorHint="@color/gray"
+            android:textSize="15dp"
+            android:paddingLeft="14dp"
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="335dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/edit_style"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/go"
+            android:onClick="onClick1"
+            android:layout_width="335dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_false"
+            android:text="Далее"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="219dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginBottom="21dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Или войдите с помощью"
+            android:textColor="@color/gray"
+            android:textSize="15dp" />
+
+        <Button
+            android:layout_width="335dp"
+            android:layout_height="60dp"
+            android:text="Войти с Яндекс"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:background="@drawable/btn_style2"/>
+    </LinearLayout>
+
+
+</LinearLayout>

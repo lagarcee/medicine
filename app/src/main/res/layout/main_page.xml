@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <SearchView
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_style"
+        android:layout_marginLeft="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Акции и новости"
+            android:textColor="@color/gray"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginLeft="20dp"
+        android:layout_width="335dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Каталог анализов"
+            android:textColor="@color/gray"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="335dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/analizy"
+            android:backgroundTint="@color/white"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/results"
+            android:backgroundTint="@color/white"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/support"
+            android:backgroundTint="@color/white"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

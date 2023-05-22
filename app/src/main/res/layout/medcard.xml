@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="Создание карты пациента"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resume1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="61dp"
+            android:onClick="onClick3"
+            android:text="Пропустить"
+            android:textColor="@color/blue"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Без карты пациента вы не сможете заказать анализы."
+            android:textColor="@color/gray"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="В картах пациентов будут храниться результаты анализов вас и ваших близких."
+            android:textColor="@color/gray"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="335dp"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_style"
+            android:hint="Имя"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/gray"
+            android:textSize="15dp" />
+
+        <EditText
+            android:layout_width="335dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_style"
+            android:hint="Отчество"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/gray"
+            android:textSize="15dp" />
+
+        <EditText
+            android:layout_width="335dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_style"
+            android:hint="Фамилия"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/gray"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="335dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_style"
+            android:ems="10"
+            android:hint="Дата рождения"
+            android:inputType="date"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/gray"
+            android:textSize="15dp" />
+
+        <Spinner
+            style="@style/font_style"
+            android:layout_width="335dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_style"
+            android:entries="@array/sex"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="335dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/btn_false"
+        android:onClick="onClick"
+        android:text="Создать"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+</LinearLayout>
