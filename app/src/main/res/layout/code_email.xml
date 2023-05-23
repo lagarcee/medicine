@@ -85,12 +85,13 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/time_code"
         android:layout_marginTop="16dp"
         android:layout_gravity="center"
         android:gravity="center"
         android:layout_width="242dp"
         android:layout_height="wrap_content"
-        android:text="Отправить код повторно можно будет через 59 секунд"
+        android:text=""
         android:textColor="@color/gray"
         android:textSize="15dp" />
 </LinearLayout>

@@ -30,6 +30,7 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news"
         android:layout_marginLeft="20dp"
         android:layout_width="335dp"
         android:layout_height="152dp"

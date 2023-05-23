@@ -9,7 +9,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
+
+import java.io.IOException;
+
 
 public class Analysis extends AppCompatActivity {
 
@@ -19,12 +21,28 @@ public class Analysis extends AppCompatActivity {
     int[] title = new int[3];
     float x1 = 0;
     int i = 0;
-
+    String content = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.analysis);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Response res = new Response();
+                try {
+                    //content = res.getContent("http://10.24.4.55:8000/api/orders/");
+                    content = res.getContent("https://3b74-89-113-139-148.ngrok-free.app/api/news/?format=json");
+                    //content = res.getContent("https://api.imgflip.com/get_memes");
+                    String test = content;
+                    //content = res.getContent("http://localhost:8000/api/orders/");
 
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+        }).start();
         //OnSwipeTouchListener = new OnSwipeTouchListener(this, findViewById(R.id.lin_lay));
         textView = findViewById(R.id.title_analysis);
         textView1 = findViewById(R.id.description);
@@ -38,6 +56,10 @@ public class Analysis extends AppCompatActivity {
         title[1] = 2;
         title[2] = 3;
         Check(i);
+
+
+
+
     }
 
     public boolean onTouch(View v, MotionEvent event) {

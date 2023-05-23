@@ -21,6 +21,7 @@ public class Login extends Activity {
         EditText emailValidate = findViewById(R.id.editTextTextEmailAddress);
         String emailPattern = "[a-zA-Z0-9._]+@[a-z]+\\.+[a-z]+";
         button.setEnabled(false);
+
         emailValidate.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -47,7 +48,7 @@ public class Login extends Activity {
                             startActivity(intent);
                         }
                     });
-                }else {
+                } else {
                     button.setEnabled(false);
                     button.setBackgroundResource(R.drawable.btn_false);
                 }
