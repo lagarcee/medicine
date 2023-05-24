@@ -1,0 +1,25 @@
+{
+  "count": 2,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "id": 3,
+      "first_name": "Вася",
+      "last_name": "Пупкин",
+      "middle_name": "Фамильев",
+      "date_of_birth": "2023-05-23",
+      "pol": "мужской",
+      "image": null
+    },
+    {
+      "id": 4,
+      "first_name": "Алиса",
+      "last_name": "Пупкина",
+      "middle_name": "Фамильева",
+      "date_of_birth": "1970-01-01",
+      "pol": "женский",
+      "image": null
+    }
+  ]
+}

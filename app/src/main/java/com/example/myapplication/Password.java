@@ -74,6 +74,7 @@ public class Password extends Activity {
         }
         i++;
 
+
         switch (i) {
             case 1:
                 imageView.setImageResource(R.drawable.progress1);
@@ -94,10 +95,30 @@ public class Password extends Activity {
             startActivity(intent);
         }
 
+
     }
     public void onClick1(View v) {
-        Intent intent = new Intent(this, Main_page.class);
+        Intent intent = new Intent(this, Medcard.class);
         startActivity(intent);
+    }
+    public void onClick3(View v){
+        i--;
+        switch (i) {
+            case 1:
+                imageView.setImageResource(R.drawable.progress1);
+                break;
+            case 2:
+                imageView.setImageResource(R.drawable.progress2);
+                break;
+            case 3:
+                imageView.setImageResource(R.drawable.progress3);
+                break;
+            case 4:
+                imageView.setImageResource(R.drawable.progress4);
+                break;
+
+        }
+
     }
 }
 

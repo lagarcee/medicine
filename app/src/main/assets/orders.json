@@ -1,0 +1,67 @@
+{
+  "count": 2,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "id": 1,
+      "address": "г. Подольск, у. Там, д. 35, к.3",
+      "date_time": "2023-05-23",
+      "phone": "+79910435998",
+      "comment": "мвмоамовашмовашмошк",
+      "patients": [
+        {
+          "patient": 3,
+          "first_name": "Вася",
+          "last_name": "Пупкин",
+          "middle_name": "Фамильев",
+          "image": null,
+          "analysises": [
+            {
+              "analysis": 1,
+              "name": "ПЦР-тест на определение РНК коронавируса стандартный",
+              "price": "1800.00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "address": "г. Подольск",
+      "date_time": "2023-05-23",
+      "phone": "+79910435998",
+      "comment": "вфвв2ц2у",
+      "patients": [
+        {
+          "patient": 3,
+          "first_name": "Вася",
+          "last_name": "Пупкин",
+          "middle_name": "Фамильев",
+          "image": null,
+          "analysises": [
+            {
+              "analysis": 2,
+              "name": "Гликированный гемоглобин (HbA1С, Glycated Hemoglobin)",
+              "price": "1070.00"
+            }
+          ]
+        },
+        {
+          "patient": 4,
+          "first_name": "Алиса",
+          "last_name": "Пупкина",
+          "middle_name": "Фамильева",
+          "image": null,
+          "analysises": [
+            {
+              "analysis": 2,
+              "name": "Гликированный гемоглобин (HbA1С, Glycated Hemoglobin)",
+              "price": "1070.00"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

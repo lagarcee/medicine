@@ -100,7 +100,8 @@
             android:inputType="date"
             android:paddingLeft="15dp"
             android:textColorHint="@color/gray"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            />
 
         <Spinner
             style="@style/font_style"
