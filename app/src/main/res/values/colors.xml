@@ -22,4 +22,5 @@
     <color name="btn_false">#C9D4FB</color>
     <color name="background_news">#CDE3FF</color>
     <color name="background_news_dark">#76B3FF</color>
+    <color name="sky">#1A6FEE</color>
 </resources>

@@ -5,104 +5,116 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <SearchView
-        android:layout_width="335dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/edit_style"
-        android:layout_marginLeft="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:orientation="vertical"
-        android:layout_marginLeft="20dp">
+            <SearchView
+                android:layout_width="335dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/edit_style" />
 
-        <TextView
-            android:id="@+id/test"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Акции и новости"
-            android:textColor="@color/gray"
-            android:textSize="17dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/news"
-        android:layout_marginLeft="20dp"
-        android:layout_width="335dp"
-        android:layout_height="152dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                <TextView
+                    android:id="@+id/test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Акции и новости"
+                    android:textColor="@color/gray"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="20dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/news"
+                android:layout_width="335dp"
+                android:layout_height="152dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Каталог анализов"
-            android:textColor="@color/gray"
-            android:textSize="17dp"
-            android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/MainPage_Recycler_2"
-            android:layout_width="335dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="24dp"
-            android:orientation="horizontal"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Каталог анализов"
+                    android:textColor="@color/gray"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/MainPage_Recycler_3"
-            android:layout_width="335dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:orientation="vertical"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/btn_recycler"
+                    android:layout_width="335dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal" />
 
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/test_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical" />
 
-    </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="49dp"
         android:layout_gravity="center"
-        android:gravity="bottom"
         android:layout_weight="1"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="horizontal">
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/analizy"
-            android:backgroundTint="@color/white"/>
+            android:backgroundTint="@color/white"
+            android:src="@drawable/analizy" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/results"
-            android:backgroundTint="@color/white"/>
+            android:backgroundTint="@color/white"
+            android:src="@drawable/results" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/support"
-            android:backgroundTint="@color/white"/>
+
+            android:backgroundTint="@color/white"
+            android:src="@drawable/support" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/profile"
-            android:backgroundTint="@color/white"/>
+            android:backgroundTint="@color/white"
+            android:src="@drawable/profile" />
     </LinearLayout>
+
 
 </LinearLayout>

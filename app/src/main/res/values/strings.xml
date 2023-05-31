@@ -1,14 +1,24 @@
 <resources>
     <string name="app_name">My Application</string>
     <string-array name="sex">
-        <item>
-            Пол
-        </item>
-        <item>
-            Мужской
-        </item>
-        <item>
-            Женский
-        </item>
+        <item>Пол</item>
+        <item>Мужской</item>
+        <item>Женский</item>
+        <item>Трансформер</item>
+    </string-array>
+    <string name="app_name2">My Application</string>
+    <string-array name="names">
+        <item>Выберите пациента</item>
+        <item>Тицкий Эдуард</item>
+        <item>Колесников Михаил</item>
+        <item>Шольнер Захар</item>
+    </string-array>
+    <string name="app_name3">My Application</string>
+    <string-array name="payment">
+        <item>Выберите способ оплаты</item>
+        <item>Оплата Apple Pay</item>
+        <item>Оплата Google Pay</item>
+        <item>Наличный расчет</item>
+        <item>Банковский расчет</item>
     </string-array>
 </resources>

@@ -9,7 +9,7 @@
                 android:gradientRadius="100dp"
                 android:startColor="@color/background_news_dark"
                 android:type="linear"
-                android:angle="@integer/material_motion_duration_long_2"/>
+                />
         </shape>
     </item>
 </layer-list>
